@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1698502574302-3931e6ae92ed?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBjbG9ja3xlbnwwfHwwfHx8MA%3D%3D') no-repeat center center fixed; /* Default background image */
+    background-size: cover; 
+    background-position: center center;
+}
+
+.timer-container {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 90px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.date-picker {
+    margin-top: 20px;
+}
+
+#target-date {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For mobile screens */
+@media screen and (max-width: 480px) {
+    body {
+        justify-content: center; 
+        background-color: #f0f0f0; 
+        background-image: none; 
+    }
+
+    .timer-container {
+        margin-right: 0; 
+        padding: 20px; 
+        max-width: 90%; 
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #countdown {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 16px; 
+    }
+}
+
+/* For tablet screens */
+@media screen and (max-width: 768px) {
+    body {
+        justify-content: center; 
+        background-color: #f0f0f0; 
+        background-image: none; 
+    }
+
+    .timer-container {
+        max-width: 70%; 
+    }
+
+    h1 {
+        font-size: 1.75rem; 
+    }
+
+    #countdown {
+        font-size: 1.75rem; 
+    }
+
+    button {
+        font-size: 1.1rem; 
+        padding: 9px 18px; 
+    }
+}
+
+/* For large screens (desktop) */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: #f0f0f0; 
+    }
+
+    .timer-container {
+        margin-right: 90px; 
+        padding: 30px; 
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    #countdown {
+        font-size: 2rem; 
+    }
+
+    button {
+        font-size: 1rem; 
+        padding: 10px 20px; 
+    }
+}

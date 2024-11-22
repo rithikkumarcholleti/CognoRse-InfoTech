@@ -1,0 +1,131 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0093E9, #80D0C7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .bmi-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .bmi-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 95%;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #0093E9;
+  }
+  
+  .btn {
+    width: 95%;
+    background: #0093E9;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #006bbf;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .bmi-category {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #0093E9;
+  }
+  
+  .bmi-info-card {
+    margin-top: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .info-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .bmi-info-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bmi-info-list li {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+  
+  .bmi-info-list li strong {
+    color: #333;
+  }
+  
